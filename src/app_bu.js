@@ -1,4 +1,5 @@
-const path = require('path')
+console.log('hey')
+// const path = require('path')
 const express = require('express')
 
 console.log(__dirname)
