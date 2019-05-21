@@ -1,0 +1,36 @@
+body {
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 8  32px;
+}
+
+h1 {
+    font-size: 50px;
+    color: grey;
+}
+
+footer {
+    color: green;
+}
+
+.class01 {
+    margin: 3 auto;
+    color: yellow;
+    background-color: brown;
+    padding: 8px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px
+}
