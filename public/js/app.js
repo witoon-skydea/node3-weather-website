@@ -1,11 +1,9 @@
-console.log('yeah')
 fetch('http://puzzle.mead.io/puzzle').then((response) => {
     response.json().then((data)=>{
         console.log(data)
     })
 })
 
-console.log("test")
 
 fetch('http://localhost:3000/weather?location=bangkok').then((response) => {
     response.json().then((data)=>{
