@@ -5,15 +5,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
 })
 
 
-fetch('http://localhost:3000/weather?location=bangkok').then((response) => {
-    response.json().then((data)=>{
-        if(data.error){
-            console.log(data.error)
-        }else{
-            console.log(data[0].location, data[0].forcastmessage)
-        }
-    })
-})
+
 
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
@@ -34,7 +26,7 @@ weatherForm.addEventListener('submit', (e)=>{
     message1.textContent = 'Searching ...'
 
 
-    fetch('http://localhost:3000/weather?location='+location).then((response) => {
+    fetch('/weather?location='+location).then((response) => {
         response.json().then((data)=>{
             if(data.error){
                 message2.textContent = data.error
